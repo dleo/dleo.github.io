@@ -17,7 +17,7 @@ title: David López
 email: dleo.lopez@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   Computer fanatic. Passionate Developer. Rose's Husband. Father of Alejandro and Enamnuel.
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dleo.github.io" # the base hostname & protocol for your site
 twitter_username: dleolopez
 github_username:  dleo
