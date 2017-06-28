@@ -21,7 +21,17 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dleo.github.io" # the base hostname & protocol for your site
 twitter_username: dleolopez
 github_username:  dleo
+stackoverflow_profile: "https://stackoverflow.com/users/4764863/david-l"
+github_profile: "https://github.com/dleo"
+in_profile: "https://www.linkedin.com/in/dleolopez/"
 
 # Build settings
 markdown: kramdown
-theme: minima
+sass:
+  sass_dir: _sass
+include:
+  - .nojekyll
+exclude:
+  - "bower_components"
+  - "bower.json"
+  - "node_modules"

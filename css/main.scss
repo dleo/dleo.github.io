@@ -1,6 +1,8 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
+@import "materialize";
+@import "font-awesome/font-awesome";
 @charset "utf-8";
 
 // Our variables
@@ -36,4 +38,94 @@ $on-laptop:        800px;
 // }
 
 // Import partials from the `minima` theme.
-@import "minima";
+//@import "minima";
+
+.header {
+    background-image: url("../assets/bg1.jpg");
+    height: 924px;
+}
+
+.skills {
+    background-image: url("../assets/bg2.jpg");
+}
+
+.text-shadow {
+    text-shadow: 2px 2px 8px #212121;
+}
+
+.about-copy {
+    font-size: 2em;
+}
+
+.section-border {
+    border-bottom: 1px solid color("orange", "accent-2");
+    position: relative;
+    color: color("orange", "accent-2");
+    margin: 1.5em 0 5em;
+}
+
+.icon-border {
+    position: absolute;
+    margin: -16px;
+    padding: 0 10px;
+    left: 48%;
+    background-color: #fff;
+}
+.skills {
+    .row {
+        margin-bottom: 0px;
+    }
+}
+.skills-bars {
+    background-color: #fff;
+    .skill-item {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        display: inline-block;
+        width: 100%;
+        h3 {
+            font-size: 1em;
+            margin: 0;
+        }
+        .skill-bar {
+            background-color: color("grey", "darken-1");
+            border-radius: 5px 0 0 5px;
+            .skill-bar-fill {
+                height: 15px;
+                width: 90%;
+                position: relative;
+                background-color: color("blue", "lighten-1");
+                span {
+                    position: absolute;
+                    right: -17px;
+                    top: -  35px;
+                    background: #333;
+                    color: #fff;
+                    padding: 5px;
+                    font-size: 0.8em;
+                }
+                span::after {
+                    content: "";
+                    position: absolute;
+                    width: 0;
+                    height: 0;
+                    right: 9px;
+                    bottom: -8px;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    border-top: 8px solid #333;
+                }
+            }
+        }
+    }
+}
+
+footer.page-footer {
+    margin-top: 0px;
+}
+
+.footer-social {
+    li {
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "dleo.github.io",
+  "homepage": "https://github.com/dleo/dleo.github.io",
+  "authors": [
+    "David Lopez <dleo.lopez@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "materialize": "^0.97.8"
+  }
+}
