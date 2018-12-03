@@ -92,7 +92,6 @@ $on-laptop:        800px;
             border-radius: 5px 0 0 5px;
             .skill-bar-fill {
                 height: 15px;
-                width: 90%;
                 position: relative;
                 background-color: color("blue", "lighten-1");
                 span {
@@ -115,6 +114,21 @@ $on-laptop:        800px;
                     border-right: 8px solid transparent;
                     border-top: 8px solid #333;
                 }
+            }
+            .p90 {
+                width: 90%;
+            }
+            .p80 {
+                width: 80%;
+            }
+            .p70 {
+                width: 70%;
+            }
+            .p60 {
+                width: 60%;
+            }
+            .p50 {
+                width: 50%;
             }
         }
     }
