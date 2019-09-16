@@ -1,0 +1,46 @@
+<nav class="black" role="navigation">
+    <div class="nav-wrapper container">
+        <a class="brand-logo" href="{{ site.url }}" id="logo-container">
+            DAVID L&Oacute;PEZ
+        </a>
+        <ul class="right hide-on-med-and-down">
+            <li>
+                <a href="{{ "#about" | prepend: site.url }}">
+                    About Me
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Portfolio
+                </a>
+            </li>
+            <li>
+                <a href="{{ "/blog.html" | prepend: site.url }}">
+                    Blog
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Résumé
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Contact
+                </a>
+            </li>
+        </ul>
+        <ul class="side-nav" id="nav-mobile">
+            <li>
+                <a href="#">
+                    Navbar Link
+                </a>
+            </li>
+        </ul>
+        <a class="button-collapse" data-activates="nav-mobile" href="#">
+            <i class="material-icons">
+                menu
+            </i>
+        </a>
+    </div>
+</nav>

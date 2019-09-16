@@ -143,3 +143,20 @@ footer.page-footer {
         margin-bottom: 10px;
     }
 }
+
+.post > p {
+    font-size: 1.2em;
+}
+
+.post-date {
+    display: block;
+    float: right;
+    color: $grey-color-light;
+    font-size: 0.3em;
+    font-style: italic;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
