@@ -46,7 +46,9 @@ $on-laptop:        800px;
 }
 
 .skills {
-    background-image: url("../assets/bg2.jpg");
+    background-image: url("../assets/bg3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text-shadow {
@@ -159,4 +161,9 @@ footer.page-footer {
 .responsive-img {
     width: 100%;
     height: auto;
+}
+
+// Blog Section
+.blog {
+    min-height: 70vh;
 }
