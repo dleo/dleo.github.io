@@ -51,6 +51,12 @@ $on-laptop:        800px;
     background-size: cover;
 }
 
+.skills-stars {
+    float: right;
+    color: color("orange", "accent-2");
+    margin-left: 1em;
+}
+
 .text-shadow {
     text-shadow: 2px 2px 8px #212121;
 }
@@ -88,6 +94,12 @@ $on-laptop:        800px;
         h3 {
             font-size: 1em;
             margin: 0;
+        }
+        h4 {
+            font-size: 0.7em;
+            margin: 0;
+            text-transform: uppercase;
+            font-weight: bold;
         }
         .skill-bar {
             background-color: color("grey", "darken-1");
