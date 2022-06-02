@@ -11277,7 +11277,6 @@ textarea.form-control-lg {
 }
 html {
   height: 100%;
-  scroll-padding-top: calc(4.5rem - 1px);
 }
 
 .page-section {
@@ -11453,6 +11452,7 @@ html {
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .portfolio .portfolio-item .portfolio-item-caption {
   position: absolute;
