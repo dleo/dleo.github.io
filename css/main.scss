@@ -3,6 +3,8 @@
 ---
 @import "materialize";
 @import "font-awesome/font-awesome";
+@import "portfolio-theme.css";
+
 @charset "utf-8";
 
 // Our variables
@@ -39,7 +41,12 @@ $on-laptop:        800px;
 
 // Import partials from the `minima` theme.
 //@import "minima";
-
+.text-center {
+    text-align: center !important;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
 .header {
     background-image: url("../assets/bg1.jpg");
     height: 924px;
@@ -76,7 +83,7 @@ $on-laptop:        800px;
     position: absolute;
     margin: -16px;
     padding: 0 10px;
-    left: 48%;
+    left: 49%;
     background-color: #fff;
 }
 .skills {
@@ -148,6 +155,16 @@ $on-laptop:        800px;
     }
 }
 
+//Avatar
+.avatar {
+    display: block;
+    height: 10em;
+    width: 10em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+}
+
 footer.page-footer {
     margin-top: 0px;
 }
@@ -179,3 +196,8 @@ footer.page-footer {
 .blog {
     min-height: 70vh;
 }
+
+  .img-portfolio {
+    height: 300px;
+    width: 300px;
+  }

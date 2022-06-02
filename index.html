@@ -5,13 +5,13 @@ title: Welcome to David Page's
 <div class="header" id="header">
     {% include navbar.html %}
     <section class="row" id="welcome">
-        <div class="col s12 center-align">
+        <div class="col-sm-12 center-align">
             <h1 class="white-text text-shadow">
                 Hello, I'm David L&oacute;pez
             </h1>
         </div>
-        <div class="col s12 m8 l8 offset-m2 offset-l2">
-            <h2 class="center-align white-text text-shadow">
+        <div class="col-sm-12">
+            <h2 class="text-center text-uppercase text-shadow white-text">
                 Full Stack Web Developer
             </h2>
             <p class="center-align white-text text-shadow">
@@ -20,17 +20,17 @@ title: Welcome to David Page's
         </div>
     </section>
 </div>
-<div class="container about" id="about">
-    <section class="row">
+<div class="container about" >
+    <section id="about" class="row">
         <div class="col s12 center-align">
-            <h2 class="">
+            <h2>
                 About Me
             </h2>
-            <div class="section-border">
+            <div class="section-border" >
                 <i aria-hidden="true" class="icon-border fa fa-star fa-2x">
                 </i>
             </div>
-            <img alt="David Lopez" class="circle" src="{{ "/assets/me-256.png" | absolute_url }}">
+            <img alt="David Lopez" class="avatar" src="{{ "/assets/avatar.png" | absolute_url }}">
             </img>
         </div>
         <div class="row">
@@ -49,6 +49,57 @@ title: Welcome to David Page's
         </div>
     </section>
 </div>
+<section class="page-section portfolio" id="portfolio-section">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 id="portfolio" class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fa fa-star fa-2x"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Grid Items-->
+        <div class="row row-portfolio justify-content-center">
+            <!-- Portfolio Item 1-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid img-portfolio" src="assets/img/portfolio/farm-erp.png" alt="..." />
+                </div>
+            </div>
+            <!-- Portfolio Item 2-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid img-portfolio" src="assets/img/portfolio/hobbyshop.png" alt="..." />
+                </div>
+            </div>
+            <!-- Portfolio Item 3-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid img-portfolio" src="assets/img/portfolio/hsd.png" alt="..." />
+                </div>
+            </div>
+            <!-- Portfolio Item 4-->
+            <div class="col-md-6 col-lg-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid img-portfolio" src="assets/img/portfolio/weather-station.png" alt="..." />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <div class="skills" id="skills">
     <div class="container">
         <section class="row" id="skills">
@@ -389,3 +440,110 @@ title: Welcome to David Page's
         </section>
     </div>
 </div>
+<!-- Portfolio Modal 1-->
+<div class="portfolio-modal modal-bs fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" onclick="hideModal('portfolioModal1')"></button></div>
+            <div class="modal-body text-center pb-12">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 col-lg-8">
+                            <!-- Portfolio Modal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">FARM ERP SAP</h2>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image-->
+                            <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/5c9ac83abe7b4e44b88b70ee495567de" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+                            <!-- Portfolio Modal - Text-->
+                            <p class="mb-12">This is an SAP built on angularjs. The API was made on PHP 7.4. Laravel.</p>
+                            <p class="mb-12">It helps to farmer on Chile to billing, personal managment and crop proccess. It include irrigations operations</p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal" onclick="hideModal('portfolioModal1')">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modal 2-->
+<div class="portfolio-modal modal-bs fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal-bs" aria-label="Close" onclick="hideModal('portfolioModal2')"></button></div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Hobbyshop</h2>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image-->
+                            <img class="img-fluid rounded mb-5" src="assets/img/portfolio/hobbyshop.png" alt="..." />
+                            <!-- Portfolio Modal - Text-->
+                            <p class="mb-4">It's a ecommerce for hobbyfans and lovers of drones and electronics.</p>
+                            <p class="mb-4">It was made with <a href="https://wordpress.com/">wordpress</a> and <a href="https://woocommerce.com/">woocomerce</a></p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal" onclick="hideModal('portfolioModal2')">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Modal 4-->
+<div class="portfolio-modal modal-bs fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close" onclick="hideModal('portfolioModal4')"></button></div>
+            <div class="modal-body text-center pb-12">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 col-lg-8">
+                            <!-- Portfolio Modal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">ARDUINO WEATHER STATION</h2>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image-->
+                            <div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/76d0a044a36746b98b52c8555d4de258" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+                            <!-- Portfolio Modal - Text-->
+                            <p class="mb-12">Weather station is an <b>open source project</b> focus on farms, the data recopiled by its sensor would help to irrigation, crop and taks on daily labors.</p>
+                            <p class="mb-12">I added features for calculations of evotranspiration (ET), solar radiation, out temperature, in temperature.</p>
+                            <p class="mb-12">It publish to MQTT broker as AWS IOT and use node red for a UX on real time.</p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal" onclick="hideModal('portfolioModal4')">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    function hideModal(id) {
+        var myModalEl = document.getElementById(id)
+        var modal = bootstrap.Modal.getInstance(myModalEl) 
+        modal.hide()
+    }
+</script>
